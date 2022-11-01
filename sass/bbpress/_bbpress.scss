@@ -2,3 +2,38 @@
 /*
 ///////////////////////////BBPRESS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 */
+
+//**forums
+#bbpress-forums {
+    margin-bottom: 0;
+}
+
+//**search form
+
+//submit btn
+#bbp_search {
+    background: url(../img/icon-search.svg);
+    background-position: center right;
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-color: none;
+    border: none;
+    border-left: 1px solid $brand-grey;
+    padding: 3px 10px;
+    color: $brand-grey;
+    font-size: $fs-16;
+    @include below(400px) {
+        border-left: none;
+        padding-left: 0;
+    }
+}
+#bbp_search_submit {
+    display: none;
+}
+
+//see .user-status in _header.scss for changes to the flex layout on small screens
+@include below(400px) {
+    .search-form {
+        margin-top: 10px;
+    }
+}

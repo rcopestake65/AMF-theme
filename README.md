@@ -17,4 +17,4 @@ All overides and new CSS for BBPress items is in _sass/bbpress_
 
 ## General CSS / Layout
 
-- maw width on large screens set at 80rem and 95% on small
+- max width on large screens set at 80rem and 95% on small

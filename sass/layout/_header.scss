@@ -6,10 +6,34 @@
 .header-container img {
     max-width: 200px;
 }
+.logged-in-status-container {
+    margin-bottom: 1rem;
+}
 .user-status {
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid $brand-grey;
+    color: $brand-purple-light;
+    padding-bottom: 0.5rem;
+    @include below(400px) {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    a {
+        color: $brand-purple-light;
+        &:hover {
+            color: $brand-yellow;
+        }
+    }
+
+    .username {
+        padding-right: 5px;
+        color: $brand-grey;
+    }
 }
 .search-form {
     margin-left: auto;
+    @include below(400px) {
+        margin-left: 0;
+    }
 }

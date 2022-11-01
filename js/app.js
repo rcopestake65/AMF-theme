@@ -4,29 +4,6 @@ date.innerHTML = new Date().getFullYear();
 //back to top button show on scroll offset
 const topBtn = document.querySelector(".top-link");
 
-window.addEventListener("scroll", () => {
-  const scrollHeight = window.scrollY;
-  if (scrollHeight > 500) {
-    topBtn.classList.add("show-link");
-  } else {
-    topBtn.classList.remove("show-link");
-  }
-});
-
-//logo hover effect
-const frontPage = document.querySelector(".home");
-const logo = document.querySelector(".logo");
-if (!frontPage) {
-  const gohome = document.querySelector(".go-home");
-  logo.addEventListener("mouseenter", function () {
-    gohome.classList.add("go-home-hover");
-    console.log("hovered");
-  });
-  logo.addEventListener("mouseleave", function () {
-    gohome.classList.remove("go-home-hover");
-  });
-}
-
 //Mobile Menu Toggle
 
 const toggleBtn = document.querySelector(".nav-toggle");
@@ -46,4 +23,14 @@ toggleBtn.addEventListener("click", function () {
   } else {
     mobileMenuContainer.style.height = 0;
   }
+});
+
+//add value
+const searchInput = document.getElementById("bbp_search");
+searchInput.value = "Search";
+searchInput.addEventListener("click", function () {
+  searchInput.value = "";
+});
+searchInput.addEventListener("focusout", function () {
+  searchInput.value = "Search";
 });

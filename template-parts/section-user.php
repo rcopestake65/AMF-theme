@@ -1,5 +1,5 @@
 <div class="user-status">
-    <div>
+    <div class="username">
         <?php global $current_user; wp_get_current_user(); ?>
         <?php if ( is_user_logged_in() ) { 
  echo 'User: ' . $current_user->display_name .  "\n"; } 
@@ -8,7 +8,7 @@ else { wp_loginout(); } ?>
     <?php if( is_user_logged_in()){
     ?>
     <a href="<?php echo wp_logout_url( home_url()); ?>" title="Logout">|
-        Logout</a>
+        Logout |</a>
     <?php
 }
 ?>

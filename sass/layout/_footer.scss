@@ -1,0 +1,55 @@
+@use "../abstracts/variables" as *;
+/*
+///////////////////////////FOOTER\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+*/
+//Footer Container
+.footer-container {
+    background-color: $clr-gray;
+    color: $clr-white;
+    padding: 1rem 0;
+    font-size: $fs-14;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 125px 2fr 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+    @include below(900px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @include below(500px) {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    a {
+        color: $clr-white;
+        display: inline-block;
+        &:hover {
+            color: $brand-yellow;
+        }
+    }
+    p {
+        padding-bottom: 0;
+    }
+}
+.footer-logo img {
+    @include below(900px) {
+        max-width: 200px;
+    }
+}
+.footer-menu-container ul {
+    display: flex;
+    li {
+        padding-right: 0.5rem;
+        @include below(800px) {
+            font-size: $fs-11;
+        }
+    }
+}
+.footer-social-icons a {
+    padding-right: 0.25rem;
+    &:hover {
+        color: $brand-yellow;
+    }
+}

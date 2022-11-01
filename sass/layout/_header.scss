@@ -1,0 +1,15 @@
+@use "../abstracts/variables" as *;
+/*
+///////////////////////////HEADER\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+*/
+
+.header-container img {
+    max-width: 200px;
+}
+.user-status {
+    display: flex;
+    justify-content: space-between;
+}
+.search-form {
+    margin-left: auto;
+}

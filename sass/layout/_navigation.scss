@@ -1,0 +1,99 @@
+@use "../abstracts/variables" as *;
+/*
+///////////////////////////NAVIGATION\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+*/
+nav {
+  display: flex;
+  place-content: center;
+  padding: 0.5rem 0;
+  background: rgb(3, 9, 69);
+  background: linear-gradient(90deg, rgba(3, 9, 69, 1) 0%, rgba(202, 39, 44, 1) 68%, rgba(232, 184, 82, 1) 100%);
+}
+.logo {
+  display: flex;
+  place-content: center;
+}
+
+.menu-container > * {
+  align-self: center;
+  flex-grow: 1;
+}
+.menu {
+  display: flex;
+}
+
+.menu li a {
+  display: block;
+  line-height: 1;
+  text-decoration: none;
+  color: $clr-white;
+  font-weight: bold;
+  text-transform: uppercase;
+  min-width: 8rem;
+  justify-content: space-between;
+  font-size: $fs-14;
+  &:hover {
+    color: $brand-yellow;
+  }
+}
+
+.toggle-btn-container {
+  display: none;
+}
+
+// /* Mobile menu */
+.sub-menu-container {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+.mobile-menu-container {
+  height: 0px;
+  overflow: hidden;
+  transition: all 0.5s linear;
+  background: rgb(3, 9, 69);
+  background: linear-gradient(90deg, rgba(3, 9, 69, 1) 0%, rgba(202, 39, 44, 1) 68%, rgba(232, 184, 82, 1) 100%);
+}
+.mobile-sub-menu {
+  margin-left: 0;
+  font-size: $fs-16;
+}
+
+@include below(1050px) {
+  .mobile-menu {
+    padding-left: 2rem;
+    li {
+      padding: 0.25rem 0 0.25rem 1rem;
+    }
+    li a {
+      width: 100%;
+      display: inline-block;
+      color: $clr-white;
+    }
+  }
+  .toggle-btn-container {
+    display: block;
+  }
+  .nav-toggle {
+    position: absolute;
+    top: 1.75rem;
+    right: 1rem;
+    transition: all 0.3s linear;
+    width: 50px;
+    background: none;
+    border: none;
+  }
+  .menu {
+    display: none;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+}
+@include below(700px) {
+  .nav-toggle {
+    top: 0;
+    right: 0;
+  }
+}

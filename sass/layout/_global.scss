@@ -1,0 +1,30 @@
+@use "../abstracts/variables" as *;
+/*
+///////////////////////////GLOBAL CONTAINERS\\\\\\\\\\\\\\\\\\\\\\\\\\
+*/
+.container {
+    max-width: 80rem;
+    padding: 1rem 1rem;
+    margin: 0 auto;
+    position: relative;
+    @include below(900px) {
+        width: 95%;
+    }
+}
+@include below($br-small) {
+    .container {
+        width: 100%;
+    }
+}
+section {
+    padding: 2rem 0;
+}
+.header-container {
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
+    // padding: 2.5rem 1rem;
+    // max-width: 80rem;
+    margin: 0 auto;
+    position: relative;
+}

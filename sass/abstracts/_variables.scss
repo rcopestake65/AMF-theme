@@ -1,0 +1,58 @@
+//utility colors
+$clr-white: hsl(0, 0%, 100%);
+$clr-gray: hsl(0, 0%, 54%);
+$clr-black: hsl(0, 0%, 0%);
+$clr-dark: hsl(0, 0%, 13%);
+$clr-white-transparent: hsla(360, 100%, 100%, 0.3);
+$clr-black-transparent: hsla(0, 0%, 0%, 0.18);
+$clr-warning: hsl(6, 78%, 57%);
+$clr-success: hsl(148, 71%, 47%);
+$clr-form: hsl(349, 35%, 91%);
+
+//branding colors
+$brand-purple: hsl(234, 89%, 14%);
+$brand-purple-light: hsl(312, 13%, 47%);
+$brand-pink: hsl(336, 100%, 49%);
+$brand-blue: hsl(249, 89%, 24%);
+$brand-red: hsl(359, 99%, 35%);
+$brand-yellow: hsl(42, 80%, 61%);
+$brand-grey: hsl(0, 0%, 80%);
+
+//branding color variants
+
+//fonts
+$font-stack: "Lato", sans-serif;
+$font-size-base: 1rem;
+
+//font-sizes
+$fs-11: 0.7rem;
+$fs-14: 0.875rem;
+$fs-16: 1rem;
+$fs-18: 1.125rem;
+$fs-20: 1.25rem;
+$fs-22: 1.375rem;
+$fs-24: 1.5rem;
+$fs-30: 1.875rem;
+$fs-32: 2rem;
+$fs-36: 2.25rem;
+$fs-48: 3rem;
+$fs-60: 3.75rem;
+$fs-85: 5.313rem;
+
+//break points
+
+@mixin below($size) {
+    @media (max-width: $size) {
+        @content;
+    }
+}
+@mixin above($size) {
+    @media (min-width: $size) {
+        @content;
+    }
+}
+$br-small: 400px;
+$br-medium: 800px;
+
+//transitions
+$transition: all 0.3s linear;

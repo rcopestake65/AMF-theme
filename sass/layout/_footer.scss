@@ -3,13 +3,27 @@
 ///////////////////////////FOOTER\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 */
 //Footer Container
-.footer-container {
+
+footer {
     background-color: $clr-gray;
     color: $clr-white;
     padding: 1rem 0;
     font-size: $fs-14;
 }
-
+.footer-container {
+    max-width: 80rem;
+    padding: 1rem 1rem;
+    margin: 0 auto;
+    position: relative;
+    @include below(900px) {
+        width: 95%;
+    }
+    @include below($br-small) {
+        .container {
+            width: 100%;
+        }
+    }
+}
 .footer-content {
     display: grid;
     grid-template-columns: 125px 2fr 1fr 1fr;

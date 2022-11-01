@@ -6,9 +6,12 @@
     </div>
 
     <?php the_content();?>
-
-    <?php get_sidebar() ?>
-    <?php get_template_part('template-parts/section', 'members');?>
+    <?php //bbp_get_template_part( 'bbpress/custom', 'loop' ); ?>
+    <div class="entry-title">
+        <?php bbp_forum_title(); ?>
+    </div>
+    <?php //get_sidebar() ?>
+    <?php //get_template_part('template-parts/section', 'members');?>
 
     <?php endwhile; else: endif;?>
 </div>

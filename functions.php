@@ -31,15 +31,15 @@ add_theme_support('menus');
 
 //Menus
 function register_my_menus() {
-    register_nav_menus(
-      array(
-        'main-menu' => __( 'Main' ),
-        'mobile-menu' => __( 'Mobile' ),
-        'footer-menu' => __( 'Footer' )
-      )
-    );
-  }
-  add_action( 'init', 'register_my_menus' );
+  register_nav_menus(
+    array(
+      'main-menu' => __( 'Main' ),
+      'mobile-menu' => __( 'Mobile' ),
+      'footer-menu' => __( 'Footer' )
+    )
+  );
+}
+add_action( 'init', 'register_my_menus' );
 
 //Page Slug Body Class
 function add_slug_body_class( $classes ) {
@@ -67,25 +67,4 @@ function theme_support(){
   }
   add_action ('after_setup_theme', 'theme_support');
   
-
-
-//custom post type
-
-// function investments()
-// {
-// $args = array(
-//     'label' => 'Investments',
-//     'public' => true,
-//     'has_archive' => true,
-//     'show_in_rest' => true,
-//     //'supports' => array('title', 'editor','thumbnail', 'excerpt'),
-//     'menu_icon'   => 'dashicons-portfolio',
-//     'taxonomies' => array('category'),
-// );
-
-// register_post_type('investments', $args);
-// }
-// add_action('init', 'investments');
-
-
 ?>

@@ -20,6 +20,8 @@ nav {
 }
 .menu {
   display: flex;
+  justify-content: space-evenly;
+  min-width: 600px;
 }
 
 .menu li a {
@@ -29,8 +31,8 @@ nav {
   color: $clr-white;
   font-weight: bold;
   text-transform: uppercase;
-  min-width: 8rem;
-  justify-content: space-between;
+  //min-width: 8rem;
+  //justify-content: space-between;
   font-size: $fs-14;
   &:hover {
     color: $brand-yellow;

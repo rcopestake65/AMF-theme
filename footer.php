@@ -1,10 +1,11 @@
 </div>
+<!--.container-->
+<footer>
 
-<!--close container for full width bg to footer-->
 
-<div class="footer-container">
+    <div class="footer-container">
 
-    <div class="container">
+
         <div class="footer-content">
             <div class="footer-logo">
                 <img src="http://the-art-market-forum.test//wp-content/uploads/2022/09/AMF-Logo_350_transp.png"
@@ -26,13 +27,16 @@
 
             </div>
         </div>
+
     </div>
-</div>
-<!--end footer container-->
+    <!--end footer container-->
 
 
+
+</footer>
 
 <?php wp_footer();?>
+
 </body>
 
 </html>

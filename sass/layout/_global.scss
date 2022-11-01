@@ -2,11 +2,17 @@
 /*
 ///////////////////////////GLOBAL CONTAINERS\\\\\\\\\\\\\\\\\\\\\\\\\\
 */
+// .outer-container {
+//     display: flex;
+//     flex-direction: column;
+//     min-height: 100vh;
+// }
 .container {
     max-width: 80rem;
     padding: 1rem 1rem;
     margin: 0 auto;
     position: relative;
+    min-height: 70vh;
     @include below(900px) {
         width: 95%;
     }

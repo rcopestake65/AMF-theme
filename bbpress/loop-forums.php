@@ -11,7 +11,6 @@
 defined( 'ABSPATH' ) || exit;
 
 do_action( 'bbp_template_before_forums_loop' ); ?>
-<h2 style='color: red'>bbpress/loop-forums.php</h2>
 
 <ul id="forums-list-<?php bbp_forum_id(); ?>" class="bbp-forums">
 

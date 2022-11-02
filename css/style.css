@@ -152,12 +152,22 @@ h6 {
 }
 
 /*
-///////////////////////////BBPRESS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+///////////////////////////BBPRESS Forums\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 */
 #bbpress-forums {
   margin-bottom: 0;
 }
 
+/*
+///////////////////////////BBPRESS Breadcrumbs\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+*/
+.user-status .bbp-breadcrumb {
+  display: none;
+}
+
+/*
+///////////////////////////BBPRESS Searc Form\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+*/
 #bbp_search {
   background: url(../img/icon-search.svg);
   background-position: center right;

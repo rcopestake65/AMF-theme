@@ -5,7 +5,9 @@
 @use "base/reset";
 @use "base/typography";
 
-@use "bbpress/bbpress";
+@use "bbpress/forums";
+@use "bbpress/breadcrumb";
+@use "bbpress/search-form";
 
 @use "layout/body";
 @use "layout/global";

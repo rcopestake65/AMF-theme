@@ -11,7 +11,7 @@
 defined( 'ABSPATH' ) || exit;
 
 ?>
-<h2 style='color: red'>bbpress/loop-single-forum.php</h2>
+
 <ul id="bbp-forum-<?php bbp_forum_id(); ?>" <?php bbp_forum_class(); ?>>
     <li class="bbp-forum-info">
 

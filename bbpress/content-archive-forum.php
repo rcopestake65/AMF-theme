@@ -12,26 +12,61 @@ defined( 'ABSPATH' ) || exit;
 
 ?>
 
-<div id="bbpress-forums" class="bbpress-wrapper">
+<!-- if statement to decide whether to use the custom BBPress loop on the Home page or the standard loop on the Forum Index page -->
 
-    <?php //bbp_get_template_part( 'form', 'search' ); ?>
+<?php
+if(is_page('Home'))
+{
+    ?>
+<?php echo '<div id="bbpress-forums" class="bbpress-wrapper">' ?>
 
-    <?php bbp_breadcrumb(); ?>
+<?php //bbp_get_template_part( 'form', 'search' ); ?>
 
-    <?php bbp_forum_subscription_link(); ?>
+<?php bbp_breadcrumb(); ?>
 
-    <?php do_action( 'bbp_template_before_forums_index' ); ?>
+<?php bbp_forum_subscription_link(); ?>
 
-    <?php if ( bbp_has_forums() ) : ?>
+<?php do_action( 'bbp_template_before_forums_index' ); ?>
 
-    <?php bbp_get_template_part( 'loop',     'forums'    ); ?>
+<?php if ( bbp_has_forums() ) : ?>
 
-    <?php else : ?>
+<?php bbp_get_template_part( 'loop',     'forums-redink'    ); ?>
 
-    <?php bbp_get_template_part( 'feedback', 'no-forums' ); ?>
+<?php else : ?>
 
-    <?php endif; ?>
+<?php bbp_get_template_part( 'feedback', 'no-forums' ); ?>
 
-    <?php do_action( 'bbp_template_after_forums_index' ); ?>
+<?php endif; ?>
 
-</div>
+<?php do_action( 'bbp_template_after_forums_index' ); 
+
+echo '</div>';
+}
+else
+{
+    ?>
+<?php echo '<div id="bbpress-forums" class="bbpress-wrapper">' ?>
+
+<?php //bbp_get_template_part( 'form', 'search' ); ?>
+
+<?php bbp_breadcrumb(); ?>
+
+<?php bbp_forum_subscription_link(); ?>
+
+<?php do_action( 'bbp_template_before_forums_index' ); ?>
+
+<?php if ( bbp_has_forums() ) : ?>
+
+<?php bbp_get_template_part( 'loop',     'forums'    ); ?>
+
+<?php else : ?>
+
+<?php bbp_get_template_part( 'feedback', 'no-forums' ); ?>
+
+<?php endif; ?>
+
+<?php do_action( 'bbp_template_after_forums_index' ); 
+
+echo '</div>';
+}
+?>

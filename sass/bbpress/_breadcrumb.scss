@@ -1,0 +1,10 @@
+@use "../abstracts/variables" as *;
+/*
+///////////////////////////BBPRESS Breadcrumbs\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+*/
+
+//the shortcode for the search functionality includes with it the breadcrumb function. This causes the breadcrumb to appear twice on the Forum Index page - so this first instance is display : none ;
+
+.user-status .bbp-breadcrumb {
+    display: none;
+}

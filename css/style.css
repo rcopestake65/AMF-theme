@@ -468,6 +468,28 @@ footer {
 }
 
 /*////////////////HOME PAGE \\\\\\\\\\\\\\\*/
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr 50% 1fr;
+}
+@media (max-width: 900px) {
+  .home-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 400px) {
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.latest-posts-grid,
+.latest-posts-grid-header {
+  display: grid;
+  grid-template-columns: 70% 1fr 1fr;
+  gap: 0.5rem;
+}
+
 /*////////////////ABOUT PAGE \\\\\\\\\\\\\\\*/
 /*////////////////APPROACH PAGE \\\\\\\\\\\\\\\*/
 .page-404 {

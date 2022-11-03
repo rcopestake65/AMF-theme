@@ -10,16 +10,20 @@ $clr-success: hsl(148, 71%, 47%);
 $clr-form: hsl(349, 35%, 91%);
 
 //branding colors
-$brand-purple: hsl(234, 89%, 14%);
+$brand-purple: hsl(310, 70%, 31%);
 $brand-purple-light: hsl(312, 13%, 47%);
 $brand-pink: hsl(336, 100%, 49%);
 $brand-blue: hsl(249, 89%, 24%);
-$brand-red: hsl(359, 99%, 35%);
+$brand-red: hsl(358, 62%, 51%);
 $brand-yellow: hsl(42, 80%, 61%);
-$brand-grey: hsl(0, 1%, 55%);
+$brand-grey: hsl(0, 0%, 44%);
 
 //branding color variants
-
+$brand-purple-transparent: hsla(310, 70%, 31%, 0.505);
+$brand-pink-transparent: hsla(336, 100%, 49%, 0.516);
+$brand-blue-transparent: hsla(249, 89%, 24%, 0.503);
+$brand-red-transparent: hsla(358, 62%, 51%, 0.514);
+$brand-grey-transparent: hsla(0, 0%, 44%, 0.501);
 //fonts
 $font-stack: "Lato", sans-serif;
 $font-size-base: 1rem;

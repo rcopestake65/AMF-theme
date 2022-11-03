@@ -52,7 +52,7 @@ function add_slug_body_class( $classes ) {
     add_filter( 'body_class', 'add_slug_body_class' );
 
  //excerpt length
- function my_excerpt_length($length){ return 10; } add_filter('excerpt_length', 'my_excerpt_length');
+ function my_excerpt_length($length){ return 7; } add_filter('excerpt_length', 'my_excerpt_length');
 
 /*  DISABLE GUTENBERG STYLE IN HEADER| WordPress 5.9 */
 function wps_deregister_styles() {

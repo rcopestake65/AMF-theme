@@ -3,7 +3,7 @@
     <div class="header-container">
         <div class="logo" id="logo">
             <a id="logo" href="<?php echo get_bloginfo('url') . '/'; ?>"><img
-                    src="http://the-art-market-forum.test//wp-content/uploads/2022/09/AMF-Logo_350_transp.png"></a>
+                    src="<?php bloginfo('template_url'); ?>/img/logo.png"></a>
 
 
         </div>
@@ -33,4 +33,3 @@ array(
 );
 ?>
 </div>
-

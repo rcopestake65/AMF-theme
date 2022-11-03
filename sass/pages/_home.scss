@@ -5,6 +5,7 @@
 .home-grid {
     display: grid;
     grid-template-columns: 1fr 50% 1fr;
+    gap: 1rem;
     @include below(900px) {
         grid-template-columns: 1fr 1fr;
     }

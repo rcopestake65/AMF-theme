@@ -13,16 +13,17 @@ defined( 'ABSPATH' ) || exit;
 do_action( 'bbp_template_before_forums_loop' ); ?>
 <div class="home-grid">
     <div class="home-grid__col-1">
-        <h2>CATEGORIES</h2>
-        <li class="bbp-body">
+        <h2>Categories</h2>
+        <ul class="accordion">
+            <li class="bbp-body">
 
-            <?php while ( bbp_forums() ) : bbp_the_forum(); ?>
+                <?php while ( bbp_forums() ) : bbp_the_forum(); ?>
 
-            <?php bbp_get_template_part( 'loop', 'single-forum-redink' ); ?>
+                <?php bbp_get_template_part( 'loop', 'single-forum-redink' ); ?>
 
-            <?php endwhile; ?>
+                <?php endwhile; ?>
 
-        </li><!-- .bbp-body -->
+            </li><!-- .bbp-body -->
 
         </ul><!-- .forums-directory -->
 
@@ -40,22 +41,23 @@ do_action( 'bbp_template_before_forums_loop' ); ?>
         <?php 
             $posts = get_posts([
                 'post_type' => 'topic',
-                'posts_per_page' => 15,
+                'posts_per_page' => 4,
                 'orderby' => 'publish_date',
                 'order' => 'DECS',
             ]);
 
 
-            echo '<div class="latest-posts-grid">';
-            
+           
+        $count = 0;  
         foreach ($posts as $post){
         setup_postdata( $post );
-        $id = get_the_ID();
-
+        $id = get_the_ID();        
+        $count++;
+        echo '<div class="latest-posts-grid">';
 
         echo do_shortcode( $stats ['reply_count'] );
         echo '<div class="latest-posts-grid__col-1">';
-            echo '<a href="' .get_the_permalink() . '"> '. get_the_title() .'</a>';
+            echo '<a href="' .get_the_permalink() . '"><span class="post-number">' . $count . '</span>' . get_the_title() .'</a>';
 
             //bbp_topic_title(); just displays the topic title again - need parent!
 
@@ -70,8 +72,9 @@ do_action( 'bbp_template_before_forums_loop' ); ?>
             //'views' shortcdoe is from the plugin: WP-PostViews
             echo do_shortcode( '[views]' );
             echo '</div>';
+            echo '</div>';
         }
-        echo '</div>';
+      
 
     wp_reset_postdata();
 

@@ -332,6 +332,24 @@ h6 {
   cursor: pointer;
 }
 
+.editors-list-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+.editors-list-container a {
+  color: #170774;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: underline;
+}
+
+.avatar-img {
+  display: inline;
+  max-width: 50%;
+}
+
 /*
 ///////////////////////////BBPRESS Breadcrumbs\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 */

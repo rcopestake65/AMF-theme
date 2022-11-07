@@ -8,8 +8,7 @@
 
         <div class="footer-content">
             <div class="footer-logo">
-                <img src="http://the-art-market-forum.test//wp-content/uploads/2022/09/AMF-Logo_350_transp.png"
-                    alt="logo">
+                <img src="<?php bloginfo('template_url'); ?>/img/logo.png">
             </div>
             <div class="footer-menu-container">
                 <?php wp_nav_menu( array( 'theme_location' => 'footer-menu','menu_class' => 'footer-menu', ) ); ?>

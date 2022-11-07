@@ -164,3 +164,20 @@
     display: block;
     cursor: pointer;
 }
+//avatar display
+.editors-list-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    a {
+        color: $brand-blue;
+        font-weight: bold;
+        font-size: $fs-16;
+        text-decoration: underline;
+    }
+}
+.avatar-img {
+    display: inline;
+    max-width: 50%;
+}

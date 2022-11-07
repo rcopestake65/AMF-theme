@@ -71,4 +71,20 @@ function theme_support(){
 
 //BBPress playground
 
+// function my_function(){
+//   echo "Hello Worldxxx";
+// }
+// add_action( 'bbp_template_before_forums_index', 'my_function' );
+
+
+// function my_function(){
+//   echo "Hello World 2";
+// }
+// add_action( 'bbp_template_before_forums_index', 'my_function' );
+
+// function myTestFunction(){
+//   echo "Test";
+// }
+// add_action( 'test', 'myTestFunction' );
+
 ?>

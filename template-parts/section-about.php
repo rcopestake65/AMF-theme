@@ -3,6 +3,4 @@
     <?php the_content();?>
 </div>
 
-
-
 <?php endwhile; else: endif;?>

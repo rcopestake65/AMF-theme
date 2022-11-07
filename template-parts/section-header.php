@@ -4,8 +4,6 @@
         <div class="logo" id="logo">
             <a id="logo" href="<?php echo get_bloginfo('url') . '/'; ?>"><img
                     src="<?php bloginfo('template_url'); ?>/img/logo.png"></a>
-
-
         </div>
 
         <nav role="navigation">

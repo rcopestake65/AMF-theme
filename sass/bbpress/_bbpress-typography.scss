@@ -1,0 +1,25 @@
+@use "../abstracts/variables" as *;
+/*
+///////////////////////////BBPRESS Typography\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+*/
+#bbpress-forums {
+    font-size: $fs-16;
+    p {
+        line-height: 1.5;
+        color: $clr-paragraph;
+    }
+    a {
+        color: $brand-blue;
+        transition: all ease 300ms;
+    }
+    a:visited {
+        color: $brand-blue;
+    }
+    a:hover {
+        color: $link-hover;
+        transition: all ease 300ms;
+    }
+    a:active {
+        color: $brand-red;
+    }
+}

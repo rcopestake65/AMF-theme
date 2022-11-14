@@ -8,6 +8,7 @@ $clr-black-transparent: hsla(0, 0%, 0%, 0.18);
 $clr-warning: hsl(6, 78%, 57%);
 $clr-success: hsl(148, 71%, 47%);
 $clr-form: hsl(349, 35%, 91%);
+$clr-paragraph: hsl(0, 0%, 18%);
 
 //branding colors
 $brand-purple: hsl(310, 70%, 31%);
@@ -17,13 +18,16 @@ $brand-blue: hsl(249, 89%, 24%);
 $brand-red: hsl(358, 62%, 51%);
 $brand-yellow: hsl(42, 80%, 61%);
 $brand-grey: hsl(0, 0%, 44%);
-
+$brand-orange: hsl(5, 62%, 51%);
 //branding color variants
 $brand-purple-transparent: hsla(310, 70%, 31%, 0.505);
 $brand-pink-transparent: hsla(336, 100%, 49%, 0.516);
 $brand-blue-transparent: hsla(249, 89%, 24%, 0.503);
 $brand-red-transparent: hsla(358, 62%, 51%, 0.514);
 $brand-grey-transparent: hsla(0, 0%, 44%, 0.501);
+
+//link colors
+$link-hover: hsl(42, 80%, 61%);
 //fonts
 $font-stack: "Lato", sans-serif;
 $font-size-base: 1rem;

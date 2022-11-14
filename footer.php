@@ -1,11 +1,7 @@
 </div>
 <!--.container-->
 <footer>
-
-
     <div class="footer-container">
-
-
         <div class="footer-content">
             <div class="footer-logo">
                 <img src="<?php bloginfo('template_url'); ?>/img/logo.png">
@@ -22,16 +18,10 @@
                 <a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>
                 <a href="#"><i class="fa-brands fa-square-instagram fa-2x"></i></a>
                 <a href="#"><i class="fa-brands fa-square-snapchat fa-2x"></i></a>
-
-
             </div>
         </div>
-
     </div>
     <!--end footer container-->
-
-
-
 </footer>
 
 <?php wp_footer();?>

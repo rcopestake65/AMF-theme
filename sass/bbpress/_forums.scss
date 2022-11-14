@@ -7,10 +7,7 @@
 #bbpress-forums {
     margin-bottom: 0;
 }
-#bbpress-forums {
-    font-size: $fs-16;
-    line-height: 1;
-}
+
 //forum menu
 
 //grid cols
@@ -55,40 +52,74 @@
     //display: block;
     padding-bottom: 3px;
 }
-.latest-post-item-1 a {
-    color: $brand-red;
-    border-bottom: 1px solid $brand-red-transparent !important;
-}
-.latest-post-item-2 a {
-    color: $brand-blue;
-    border-bottom: 1px solid $brand-blue-transparent !important;
-}
-.latest-post-item-3 a {
-    color: $brand-purple;
-    border-bottom: 1px solid $brand-purple-transparent !important;
-}
-.latest-post-item-4 a {
-    color: $brand-pink;
-    border-bottom: 1px solid $brand-pink-transparent !important;
+#bbpress-forums {
+    .latest-post-item-1 a {
+        color: $brand-red;
+        border-bottom: 1px solid $brand-red-transparent !important;
+        &:visited {
+            color: $brand-red;
+        }
+        &:hover {
+            color: $link-hover;
+            border-bottom: 1px solid $link-hover !important;
+        }
+    }
+    .latest-post-item-2 a {
+        color: $brand-blue;
+        border-bottom: 1px solid $brand-blue-transparent !important;
+        &:visited {
+            color: $brand-blue;
+        }
+        &:hover {
+            color: $link-hover;
+            border-bottom: 1px solid $link-hover !important;
+        }
+    }
+    .latest-post-item-3 a {
+        color: $brand-purple;
+        border-bottom: 1px solid $brand-purple-transparent !important;
+        &:visited {
+            color: $brand-purple;
+        }
+        &:hover {
+            color: $link-hover;
+            border-bottom: 1px solid $link-hover !important;
+        }
+    }
+    .latest-post-item-4 a {
+        color: $brand-pink;
+        border-bottom: 1px solid $brand-pink-transparent !important;
+        &:visited {
+            color: $brand-pink;
+            border-bottom: 1px solid $link-hover !important;
+        }
+        &:hover {
+            color: $link-hover;
+            border-bottom: 1px solid $link-hover !important;
+        }
+    }
 }
 .latest-post-item-1 p,
 .latest-post-item-2 p,
 .latest-post-item-3 p,
 .latest-post-item-4 p {
-    padding-top: 1rem;
+    padding-top: 0.5rem;
 }
-.latest-post-item-1 p {
-    color: $brand-red;
+#bbpress-forums {
+    .latest-post-item-1 p {
+        color: $brand-red;
+    }
+    .latest-post-item-2 p {
+        color: $brand-blue;
+    }
+    .latest-post-item-3 p {
+        color: $brand-purple;
+    }
+    .latest-post-item-4 p {
+        color: $brand-pink;
+    }
 }
-.latest-post-item-2 p {
-    color: $brand-blue;
-}
-.latest-post-item-3 p {
-    color: $brand-purple;
-}
-.latest-post-item-4 p {
-    color: $brand-pink;
-}
+
 .post-number {
     padding-right: 0.5rem;
 }
@@ -119,10 +150,15 @@
 .bbp-forum {
     padding-top: 0.5rem;
 }
-.bbp-forum-title {
-    color: $brand-blue;
-    font-weight: bold;
-    letter-spacing: 1px;
+#bbpress-forums {
+    .bbp-forum-title {
+        color: $brand-blue;
+        font-weight: bold;
+        letter-spacing: 1px;
+        &:hover {
+            color: $brand-blue;
+        }
+    }
 }
 
 .arrow-icon {
@@ -147,10 +183,18 @@
         width: 100%;
     }
 }
-.bbp-forums-list a {
-    color: $brand-red;
-    font-weight: bold;
-    letter-spacing: 1px;
+#bbpress-forums {
+    .bbp-forums-list a {
+        color: $brand-red;
+        font-weight: bold;
+        letter-spacing: 1px;
+        &:visited {
+            color: $brand-red;
+        }
+        &:hover {
+            color: $link-hover;
+        }
+    }
 }
 #bbpress-forums .bbp-forums-list {
     border-left: none;
@@ -180,4 +224,47 @@
 .avatar-img {
     display: inline;
     max-width: 50%;
+}
+
+#bbpress-forums li.bbp-footer,
+#bbpress-forums li.bbp-header {
+    border-top: none;
+}
+
+#bbpress-forums {
+    div.bbp-template-notice.info {
+        border: none;
+        padding: 0 2px;
+        background: $brand-blue;
+        color: $clr-white;
+        li {
+            font-size: $fs-14;
+        }
+        a {
+            color: $clr-white;
+            text-decoration: underline;
+            &:hover {
+                color: $link-hover;
+            }
+        }
+        .bbp-author-avatar .avatar-14 {
+            width: 28px;
+            height: 28px;
+        }
+    }
+}
+#bbpress-forums li.bbp-header {
+    background: $brand-blue;
+    color: $clr-white;
+}
+
+//submit btn
+.bbp-submit-wrapper {
+    button {
+        background-color: $brand-blue;
+        color: $clr-white;
+        border: none;
+        padding: 5px;
+        border-radius: 5px;
+    }
 }

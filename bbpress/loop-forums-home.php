@@ -11,6 +11,7 @@
 defined( 'ABSPATH' ) || exit;
 
 do_action( 'bbp_template_before_forums_loop' ); ?>
+<span class="template-name">loop-forums.php</span>
 <div class="home-grid">
     <div class="home-grid__col-1">
         <h2>Categories</h2>
@@ -19,7 +20,7 @@ do_action( 'bbp_template_before_forums_loop' ); ?>
 
                 <?php while ( bbp_forums() ) : bbp_the_forum(); ?>
 
-                <?php bbp_get_template_part( 'loop', 'single-forum' ); ?>
+                <?php bbp_get_template_part( 'loop', 'single-forum-home' ); ?>
 
                 <?php endwhile; ?>
 

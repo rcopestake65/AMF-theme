@@ -15,5 +15,4 @@
 
 <body <?php body_class();?>>
 
-
     <?php get_template_part('template-parts/section', 'header');?>

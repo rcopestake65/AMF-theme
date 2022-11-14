@@ -68,7 +68,13 @@ function theme_support(){
   }
   add_action ('after_setup_theme', 'theme_support');
   
+  function bbp_enable_visual_editor( $args = array() ) {
+    $args['tinymce'] = true;
+    return $args;
+}
 
+//add the visual tab to the tiny mce editor
+add_filter( 'bbp_after_get_the_content_parse_args', 'bbp_enable_visual_editor' );
 //BBPress playground
 
 // function my_function(){

@@ -186,6 +186,7 @@ h6 {
   border-bottom: 1px solid rgba(112, 112, 112, 0.501);
   margin-bottom: 1rem;
   margin-right: 1rem;
+  padding-bottom: 1rem;
 }
 
 .latest-posts-grid:last-of-type {
@@ -200,7 +201,6 @@ h6 {
 
 .latest-posts-grid__col-2,
 .latest-posts-grid__col-3 {
-  align-self: center;
   justify-self: center;
 }
 
@@ -212,76 +212,55 @@ h6 {
 }
 
 #bbpress-forums .latest-post-item-1 a {
-  color: #d0353a;
-  border-bottom: 1px solid rgba(208, 53, 58, 0.514) !important;
+  color: #170774;
 }
 #bbpress-forums .latest-post-item-1 a:visited {
-  color: #d0353a;
+  color: #170774;
 }
 #bbpress-forums .latest-post-item-1 a:hover {
   color: #ebbb4c;
-  border-bottom: 1px solid #ebbb4c !important;
 }
 #bbpress-forums .latest-post-item-2 a {
-  color: #170774;
-  border-bottom: 1px solid rgba(23, 7, 116, 0.503) !important;
+  color: #d0353a;
 }
 #bbpress-forums .latest-post-item-2 a:visited {
-  color: #170774;
+  color: #d0353a;
 }
 #bbpress-forums .latest-post-item-2 a:hover {
   color: #ebbb4c;
-  border-bottom: 1px solid #ebbb4c !important;
 }
 #bbpress-forums .latest-post-item-3 a {
-  color: #861874;
-  border-bottom: 1px solid rgba(134, 24, 116, 0.505) !important;
+  color: #f55e00;
 }
 #bbpress-forums .latest-post-item-3 a:visited {
-  color: #861874;
+  color: #f55e00;
 }
 #bbpress-forums .latest-post-item-3 a:hover {
   color: #ebbb4c;
-  border-bottom: 1px solid #ebbb4c !important;
 }
 #bbpress-forums .latest-post-item-4 a {
-  color: #fa0064;
-  border-bottom: 1px solid rgba(250, 0, 100, 0.516) !important;
+  color: #b1992f;
 }
 #bbpress-forums .latest-post-item-4 a:visited {
-  color: #fa0064;
-  border-bottom: 1px solid #ebbb4c !important;
+  color: #b1992f;
 }
 #bbpress-forums .latest-post-item-4 a:hover {
   color: #ebbb4c;
-  border-bottom: 1px solid #ebbb4c !important;
 }
 
-.latest-post-item-1 p,
-.latest-post-item-2 p,
-.latest-post-item-3 p,
-.latest-post-item-4 p {
-  padding-top: 0.5rem;
-}
-
-#bbpress-forums .latest-post-item-1 p {
-  color: #d0353a;
-}
-#bbpress-forums .latest-post-item-2 p {
-  color: #170774;
-}
-#bbpress-forums .latest-post-item-3 p {
-  color: #861874;
-}
+#bbpress-forums .latest-post-item-1 p,
+#bbpress-forums .latest-post-item-2 p,
+#bbpress-forums .latest-post-item-3 p,
 #bbpress-forums .latest-post-item-4 p {
-  color: #fa0064;
+  padding-top: 0.5rem;
+  color: #707070;
 }
 
 .post-number {
   padding-right: 0.5rem;
 }
 
-.latest-posts-grid-header p {
+#bbpress-forums .latest-posts-grid-header p {
   color: #707070;
 }
 
@@ -342,12 +321,12 @@ h6 {
 }
 
 #bbpress-forums .bbp-forums-list a {
-  color: #d0353a;
+  color: #707070;
   font-weight: bold;
   letter-spacing: 1px;
 }
 #bbpress-forums .bbp-forums-list a:visited {
-  color: #d0353a;
+  color: #707070;
 }
 #bbpress-forums .bbp-forums-list a:hover {
   color: #ebbb4c;
@@ -367,17 +346,20 @@ h6 {
   cursor: pointer;
 }
 
-.editors-list-container {
+#bbpress-forums .editors-list-container {
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding-bottom: 1rem;
+  padding: 0.5rem 0;
 }
-.editors-list-container a {
-  color: #170774;
+#bbpress-forums .editors-list-container a {
+  color: #707070;
   font-weight: bold;
   font-size: 1rem;
   text-decoration: underline;
+}
+#bbpress-forums .editors-list-container a:visited {
+  color: #707070;
 }
 
 .avatar-img {
@@ -422,6 +404,10 @@ h6 {
   border: none;
   padding: 5px;
   border-radius: 5px;
+}
+
+.bbp-forums-list br {
+  display: none;
 }
 
 /*
@@ -543,6 +529,28 @@ h6 {
 }
 #bbpress-forums a:active {
   color: #d0353a;
+}
+
+/*
+///////////////////////////BBPRESS Following Icons\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+*/
+.following-icons {
+  display: flex;
+  color: #707070;
+}
+.following-icons div:nth-of-type(2),
+.following-icons div:nth-of-type(3) {
+  padding-left: 1rem;
+}
+
+.following-icons i {
+  padding-left: 0.25rem;
+}
+
+.latest {
+  border-bottom: 1px solid rgba(112, 112, 112, 0.501);
+  padding-bottom: 1rem;
+  color: #707070;
 }
 
 /*
@@ -838,6 +846,10 @@ footer {
   display: grid;
   grid-template-columns: 70% 1fr 1fr;
   gap: 0.5rem;
+}
+
+.latest-posts-grid p {
+  padding-bottom: 0;
 }
 
 /*////////////////ABOUT PAGE \\\\\\\\\\\\\\\*/

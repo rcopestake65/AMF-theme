@@ -13,7 +13,7 @@ defined( 'ABSPATH' ) || exit;
 ?>
 
 
-<span class="template-name">loop-single-forum.php</span>
+<span class="template-name">loop-single-forum-home.php</span>
 <ul id="bbp-forum-<?php bbp_forum_id(); ?>" <?php bbp_forum_class(); ?>>
     <li class="bbp-forum-info">
 

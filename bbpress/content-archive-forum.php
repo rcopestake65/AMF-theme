@@ -13,6 +13,7 @@ defined( 'ABSPATH' ) || exit;
 ?>
 <?php if( is_page('Home') ){
     ?>
+
 <div id="bbpress-forums" class="bbpress-wrapper">
 
     <?php //bbp_get_template_part( 'form', 'search' ); ?>
@@ -40,6 +41,7 @@ defined( 'ABSPATH' ) || exit;
 </div>
 <?php }else{
     ?>
+<span class="template-name">content-archive-forums.php</span>
 <div id="bbpress-forums" class="bbpress-wrapper">
 
     <?php //bbp_get_template_part( 'form', 'search' ); ?>

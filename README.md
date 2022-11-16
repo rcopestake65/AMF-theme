@@ -7,7 +7,7 @@
 Folder **bbpress** created in _wp-content/themes/redink/_
 Any templates needing amends are copied from the original BBPress templates folder to _wp-content/themes/redink/bbpress_
 
-**Important** - The Home page and the Forum Index page both use the shortcode _[bbp-forum-index]_. This starts the BBPres loop beginning with _content-archive-forum.php_ - this has been put into an if/else statement to determine whether the page is Home or Forum Index. If the former, it pulls in the custom version of the loops for the homepage.
+**Important** - The BBPres loop begins with _content-archive-forum.php_ - this has been put into an if/else statement to determine whether the page is Home or other pages that use the loop. If the former, it pulls in the custom version of the loops for the homepage.
 
 ### Moving the search input:
 

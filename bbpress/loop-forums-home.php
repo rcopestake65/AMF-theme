@@ -11,7 +11,7 @@
 defined( 'ABSPATH' ) || exit;
 
 do_action( 'bbp_template_before_forums_loop' ); ?>
-<span class="template-name">loop-forums.php</span>
+<span class="template-name">loop-forums-home.php</span>
 <div class="home-grid">
     <div class="home-grid__col-1">
         <h2>Categories</h2>
@@ -64,7 +64,8 @@ do_action( 'bbp_template_before_forums_loop' ); ?>
 
            //the excerpt is shortened to 10 words in the functions.php file
             echo the_excerpt();
-
+echo '<p>Category: -----<br>';
+echo 'Topic: -----</p>';
             echo '</div>
         <div class="latest-posts-grid__col-2">';
             bbp_topic_reply_count( $id );
@@ -119,13 +120,20 @@ if ( ! empty( $editors ) ) {
            
            // Show avatar, name and posts count.
            ?>
+        <!--<a href="<?php bbp_user_profile_url( $editor->ID ); ?>">
+             <?php
+                echo '<img class="avatar-img" src="' . esc_url( get_avatar_url( $editor->ID ) ) . '" /></a>'
+            ?> -->
         <a href="<?php bbp_user_profile_url( $editor->ID ); ?>">
             <?php
-                echo '<img class="avatar-img" src="' . esc_url( get_avatar_url( $editor->ID ) ) . '" /></a>'
-            ?>
-            <a href="<?php bbp_user_profile_url( $editor->ID ); ?>">
-                <?php
             echo '<span>' . esc_html( $editor->display_name ) . '</span></a></div>';
+            echo '<div class="following-icons">
+            <div class="views">428 <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="hearts">50<i class="fa-solid fa-heart"></i></div>
+            <div class="posts">20<i class="fa-solid fa-file-lines"></i></div></div>
+            <div class="latest">Latest: ----</div>
+            ';
 
     }
 

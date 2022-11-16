@@ -1,0 +1,20 @@
+@use "../abstracts/variables" as *;
+/*
+///////////////////////////BBPRESS Following Icons\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+*/
+.following-icons {
+    display: flex;
+    color: $brand-grey;
+    div:nth-of-type(2),
+    div:nth-of-type(3) {
+        padding-left: 1rem;
+    }
+}
+.following-icons i {
+    padding-left: 0.25rem;
+}
+.latest {
+    border-bottom: 1px solid $brand-grey-transparent;
+    padding-bottom: 1rem;
+    color: $brand-grey;
+}
